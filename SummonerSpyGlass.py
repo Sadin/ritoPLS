@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-import requests, json, pprint
+import json, pprint
 
 app = Flask(__name__)
 
