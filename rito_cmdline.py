@@ -1,17 +1,21 @@
 import requests, json, pprint
 
+# Declare some stuff here, Best stuff Declared NA
 cycle = True
 error = False
+error_message = "Something didnt work cause Sadin is a baddie."
 
 while cycle == True:
     
     # Check if the loop was restarted due to an error.
     if error == False:
         # Ask user from a list of functions what they would like to do.
-        user_intention = raw_input("Welcome to summoner spyglass, how can I help? ( Type 'help' for a list of options ) ")
+        user_intention = raw_input("Welcome to ritoCMD, how can I help: ( Type 'help' for a list of options ) ")
 
-    elif error == True
-
+    elif error == True:
+        user_intention = raw_input("You're request was not recognized, make sure you've entered it correctly, and try again: ( Type 'help' for a list of options ) ")
+    else
+        return error_message
     # Stop the loop and exit,
     if user_intention == "exit":
         print("Bye, Bye!")
@@ -45,6 +49,7 @@ while cycle == True:
 
     else:
         error = False
+
 
 
  
