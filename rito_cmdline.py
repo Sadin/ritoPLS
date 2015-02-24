@@ -1,13 +1,16 @@
 import requests, json, pprint
 
 cycle = True
-first_time = True
+error = False
 
 while cycle == True:
-    # Ask user from a list of functions what they would like to do.
-    if first_time == True:
+    
+    # Check if the loop was restarted due to an error.
+    if error == False:
+        # Ask user from a list of functions what they would like to do.
         user_intention = raw_input("Welcome to summoner spyglass, how can I help? ( Type 'help' for a list of options ) ")
-    elif first_time == False
+
+    elif error == True
 
     # Stop the loop and exit,
     if user_intention == "exit":
@@ -41,7 +44,8 @@ while cycle == True:
     # If the user input stored at user_intention makes no sense, restart the loop with error message and reprompt.
 
     else:
-        first_time = False
+        error = False
+
 
  
 
