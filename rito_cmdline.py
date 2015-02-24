@@ -1,6 +1,8 @@
 import requests, json, pprint
 
-while True:
+cycle = True
+
+while cycle == True:
     # Ask user from a list of functions what they would like to do.
     user_intention = raw_input("Welcome to summoner spyglass, what would you like to do?")
 
@@ -8,6 +10,7 @@ while True:
     if user_intention == "Summoner":
         summoner_name = raw_input("Enter summoner name: ")
 
+    # Verify the summoner_name input was correct, if not break the loop
         verify = raw_input("Im going to grab details of {}, is that correct? (yes/no)".format(summoner_name))
 
         if verify == "yes":
