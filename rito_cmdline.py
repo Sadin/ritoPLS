@@ -46,6 +46,13 @@ while cycle == True:
 
                     pprint.pprint(r.json())
 
+                    summoner_data = r.json()
+                    summoner = summoner_data[summoner_name]
+
+                    level = summoner['summonerLevel']
+
+                    print "Level {}?  Unbelievable!?".format(level)
+
                     # Check if the user would like to check the details of another summoner,
                     # If not Send them back to the function selection prompt.
 
