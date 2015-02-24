@@ -44,14 +44,20 @@ while cycle == True:
                 if r.status_code == 200:
                     print("Success! The summoner {} was found!\n".format(summoner_name))
 
-                    pprint.pprint(r.json())
-
                     summoner_data = r.json()
-                    summoner = summoner_data[summoner_name]
+                    summoner = summoner_data[summoner_name.lower()]
 
+                    num = summoner['id']
                     level = summoner['summonerLevel']
 
-                    print "Level {}?  Unbelievable!?".format(level)
+
+                    print """
+So here is what ive got for you:
+
+    Summoner Name: {}
+    ID: {}
+    Level: {}
+                        """.format(summoner_name, num, level,)
 
                     # Check if the user would like to check the details of another summoner,
                     # If not Send them back to the function selection prompt.
