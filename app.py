@@ -6,8 +6,9 @@ app = Flask(__name__, static_path='/static')
 Triangle(app)
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+@app.route('/<default>')
+def index(default=''):
+    return render_template('index.html', default=default)
 
 
 if __name__ == '__main__':

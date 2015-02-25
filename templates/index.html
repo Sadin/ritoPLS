@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/app.css" />
     <script src="https://code.angularjs.org/1.3.14/angular.min.js"></script>
 </head>
-<body>
+<body ng-init="yourName='{{default}}';">
 
 <div class="container">
 
@@ -18,9 +18,9 @@
         </div>
         <div class="seven columns ">
             <ul class="header-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="button" href="#">Home</a></li>
+                <li><a class="button" href="#">About</a></li>
+                <li><a class="button" href="#">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -32,6 +32,19 @@
     <hr>
     <h1>Hello {{yourName|angular}}!</h1>
         </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <div class="six columns">
+                <p>Created by <a href="https://github.com/Sadin">@Sadin</a> and <a href="https://github.com/Ruinsane">@Ruinsane</a>.</p>
+            </div>
+
+            <div class="six columns">
+                <p class="right">Source available on <a href="https://github.com/Sadin/ritoPLS">Github</a>!</p>
+            
+            </div>
+        </div>                
     </div>
 </div>
     <script src="https://code.angularjs.org/1.3.14/angular.min.js"></script>
