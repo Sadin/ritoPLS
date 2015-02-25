@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Summoner Query{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+    <form name="pForm">
+
+      {% for field in form %}
+        <label>{{field.label}}</label> {{field}} <br>
+      {% endfor %}
+
+      <button data-ng-click="send()" data-ng-disabled="pForm.$invalid">
+        SEND
+      </button>
+
+    </form>
+{% endblock %}
