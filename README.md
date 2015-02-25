@@ -1,4 +1,9 @@
-# SummonerSpyGlass
+# RitoPLS
 Application built with Flask that communicates with the RiotGames API to provide useful data about a specific summoner.
 
-Currently we are working on the command line version of the app to become familar with the Riot API and to have the functions ready to import into flask when the time comes.
+A Flask application that asks Riots API for information on Summoners, Champions, Match History, and more.
+
+### Contributors
+
+* Zachary Snyder - (Sadin)
+* Dylan Leh 	 - (Ruinsane)
