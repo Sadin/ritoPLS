@@ -3,7 +3,7 @@ import requests, json, pprint
 # Declare some stuff here, Best stuff Declared NA 
 cycle = True
 error = False
-error_message = "Something didnt work cause Sadin is a baddie."
+error_message = "Something didn't work cause Sadin is a baddie."
 
 # Declarations for Summoner Details while loop
 summoner_error = False
