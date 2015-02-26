@@ -1,9 +1,13 @@
 import requests, json, pprint
 
 # Declare some stuff here, Best stuff Declared NA 
-yes = set['yes', 'y', 'ye', '']     # This is for some of the input stuff you have
-no = set['no' 'n']              # This way, if mistype or just feel like taking the easy way out,
+# yes = set['yes', 'y', 'ye', '']     # This is for some of the input stuff you have
+# no = set['no' 'n']                 # This way, if mistype or just feel like taking the easy way out,
                                 # The function will still register yes or no
+
+# Im leaving the above out for now till we build on the idea a bit more. Right now it stops the script from even running.
+# And im too busy working on the Flask Application to incorperate it.
+
 cycle = True
 error = False
 error_message = "Something didn't work cause Sadin is a baddie."
