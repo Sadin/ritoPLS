@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Welcome{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+
+{% block content %}
+	    <form action="{{ url_for('summoner') }}" method="POST">
+	    	<input type"text" name="name" value="" autofocus>
+	    	<input type="submit" class="btn btn-large bg-blue" value="Go">
+	    </form>
+{% endblock %}
+
+{% block gutters %}					
+					<h3>Heading</h3>
+
+                    <p>This is a short description for one of the three columns on our homepage.</p>
+                    </div>
+
+                    <div class="column-8">
+                    <h3>Heading</h3>
+
+                    <p>This is a short description for one of the three columns on our homepage.</p>
+{% endblock %}

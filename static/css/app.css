@@ -46,6 +46,12 @@
   padding: 35px;
   text-align: center;
 }
+.feature-summoner {
+  background-color: #eee;
+  margin-top: 5px;
+  padding: 5px;
+  text-align: center;
+}
 @media (min-width: 48em) {
   .feature {
     padding: 50px;

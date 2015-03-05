@@ -28,29 +28,23 @@
                 </ul>
             </nav>
         </header>
-
+        {% if landing == True %}
         <div class="feature">
-            <h1 class="feature-title">Enter a Summoners name</h1>
 
+            <h1 class="feature-title">Enter a Summoners name</h1>
+        {% else %}
+        <div class="feature-summoner">
+
+        {% endif %}
             <p class="feature-description">
                 {% block content %}{% endblock %}
             </p>
-
-            <a class="btn btn-large bg-blue">Go</a>
         </div>
 
         <main class="siteContent">
             <div class="row gutters">
                 <div class="column-8">
-                    <h3>Heading</h3>
-
-                    <p>This is a short description for one of the three columns on our homepage.</p>
-                    </div>
-
-                    <div class="column-8">
-                    <h3>Heading</h3>
-
-                    <p>This is a short description for one of the three columns on our homepage.</p>
+                    {% block gutters %}{% endblock %}
                 </div>
                 </div>
         </main>

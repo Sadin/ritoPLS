@@ -5,10 +5,12 @@ import requests, json, pprint
 app = Flask(__name__, static_path='/static')
 
 @app.route('/')
-def index(default=''):
-    return render_template('index.html')
+def index():
+    return render_template('index.html', landing=True)
 
 @app.route('/summoner', methods=['POST'])
+def summoner():
+	return render_template('summoner.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
