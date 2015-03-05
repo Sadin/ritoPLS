@@ -8,7 +8,7 @@ app = Flask(__name__, static_path='/static')
 def index(default=''):
     return render_template('index.html')
 
-
+@app.route('/summoner', methods=['POST'])
 
 if __name__ == '__main__':
     app.run()
