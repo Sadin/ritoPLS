@@ -12,5 +12,7 @@ def index():
 def summoner():
 	return render_template('summoner.html')
 
+@app.route('')
+
 if __name__ == '__main__':
     app.run(debug=True)
