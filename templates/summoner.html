@@ -7,10 +7,12 @@
 
 {% block content %}
 	    <form class="form" action="{{ url_for('summoner') }}" method="POST">
-	    	<div  class="form-item">
-		    	<input type="text" name="name" placeholder="Summoner Name" autofocus>
-		    	<a type="submit" class="btn btn-search bg-red" ><li class="fa fa-search"></li></a>
-		    </div>
+	    	<div class="form-item">
+	    		<input type"text" name="name" placeholder="Summoner Name" autofocus />
+	    		<button type="submit" class="btn btn-search bg-red">
+                <i class="fa fa-search fa-lg"></i>
+            	</button>
+	    	</div>
 	    </form>
 {% endblock %}
 

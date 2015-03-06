@@ -8,7 +8,7 @@ app = Flask(__name__, static_path='/static')
 def index():
     return render_template('index.html', landing=True)
 
-@app.route('/summoner', methods=['POST'])
+@app.route('/summoner', methods=['GET', 'POST'])
 def summoner():
 	return render_template('summoner.html')
 

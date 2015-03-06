@@ -1,9 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 html, body {
 	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.35);
+	          box-shadow: inset 0 0 100px rgba(0,0,0,.35);
+}
+body {
+	padding-top:75px;
 }
 .container {
   width: 90%;
+
 }
 @media (min-width: 48em) {
   .container {
@@ -47,9 +56,9 @@ html, body {
 
 .feature {
   background-color: #eee;
-  margin-top: 50px;
   padding: 35px;
   text-align: center;
+  vertical-align: middle;
 }
 .feature-summoner {
   background-color: #eee;
