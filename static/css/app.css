@@ -4,14 +4,19 @@ html, body {
 	width: 100%;
 	height: 100%; /* For at least Firefox */
 	min-height: 100%;
-	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.35);
-	          box-shadow: inset 0 0 100px rgba(0,0,0,.35);
+	background:url('http://subtlepatterns.com/patterns/stardust.png') fixed;
+	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+	          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 body {
 	padding-top:75px;
 }
 .container {
-  width: 90%;
+	width: 90%;
+	background:#fff;
+	padding:1em;
+	-webkit-box-shadow: 0 0 75px rgba(0,0,0,.5);
+			box-shadow: 0 0 75px rgba(0,0,0,.5);
 
 }
 @media (min-width: 48em) {
@@ -27,7 +32,6 @@ body {
 
 
 .siteHeader {
-  border-bottom: 1px solid #eee;
 }
 
 .logo {
@@ -62,7 +66,6 @@ body {
 }
 .feature-summoner {
   background-color: #eee;
-  margin-top: 5px;
   padding: 5px;
   text-align: center;
 }
@@ -85,15 +88,13 @@ body {
   padding-top: 15px;
 }
 a, a:visited {
-	color:#555;
-	transition: all .3s;
-}
-.btn a , .btn a:visited  {
-	color:#fefefe;
+	color:555;
 	transition: all .3s;
 }
 a:hover {
-	color:#222;
+	color:white;
 }
+
+
 
 
