@@ -17,15 +17,17 @@
 {% endblock %}
 
 {% block gutters %}					
-					<div class="column-8">
-						<h3>Summoner Info for: {{ summoner }}</h3>
-
-	                    <p>This is a short description for one of the three columns on our homepage.</p>
+					<div class="column-16">
+						{% if failure == False %}
+						<h3>
+							Summoner Info for: {{ summoner }}
+						</h3>
+						{% else %}
+	                    <div class="">
+							<p style="display:block" class="alert bg-red ">
+								<i class="align-center fa fa-exclamation-circle">Error</i>
+							</p>
+						</div>
+						{% endif %}
                     </div>
-
-                    <div class="column-8">
-	                    <h3>Heading</h3>
-
-	                    <p>This is a short description for one of the three columns on our homepage.</p>
-	                </div>
 {% endblock %}
