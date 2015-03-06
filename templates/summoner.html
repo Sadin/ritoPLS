@@ -1,33 +1,33 @@
 {% extends "layout.html" %}
 {% block title %}Welcome{% endblock %}
 {% block head %}
-  {{ super() }}
+    {{ super() }}
 {% endblock %}
 
 
 {% block content %}
-		<form class="form" action="{{ url_for('summoner') }}" method="POST">
-			<div class="form-item">
-				<input type"text" name="name" placeholder="Summoner Name" value="{{ summoner }}"autofocus />
-				<button type="submit" class="btn btn-search bg-blue">
-				<i class="fa fa-search fa-lg"></i>
-				</button>
-			</div>
-		</form>
+        <form class="form" action="{{ url_for('summoner') }}" method="POST">
+            <div class="form-item">
+                <input type"text" name="name" placeholder="Summoner Name" value="{{ summoner }}"autofocus />
+                <button type="submit" class="btn btn-search bg-blue">
+                <i class="fa fa-search fa-lg"></i>
+                </button>
+            </div>
+        </form>
 {% endblock %}
 
-{% block gutters %}					
-					<div class="column-16">
-						{% if failure == False %}
-						<h3>
-							Summoner Info for: {{ summoner }}
-						</h3>
+{% block gutters %}
+                    <div class="column-16">
+                        {% if failure == False %}
+                        <h3>
+                            Summoner Info for: {{ summoner }}
+                        </h3>
 						{% else %}
 						<div class="">
-							<p class="alert bg-red">
-								<i class="align-center fa fa-exclamation-circle">Error</i>
-							</p>
-						</div>
-						{% endif %}
-					</div>
+                            <p class="alert bg-red">
+                                <i class="align-center fa fa-exclamation-circle">Error</i>
+                            </p>
+                        </div>
+                        {% endif %}
+                    </div>
 {% endblock %}
