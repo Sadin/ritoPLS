@@ -16,6 +16,7 @@ html, body {
   transition: all .3s;
 }
 
+
 .siteHeader {
   border-bottom: 1px solid #eee;
 }
@@ -73,6 +74,17 @@ html, body {
 .siteFooter {
   border-top: 1px solid #eee;
   padding-top: 15px;
+}
+a, a:visited {
+	color:#555;
+	transition: all .3s;
+}
+.btn a , .btn a:visited  {
+	color:#fefefe;
+	transition: all .3s;
+}
+a:hover {
+	color:#222;
 }
 
 
