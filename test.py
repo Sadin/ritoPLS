@@ -6,12 +6,12 @@ while cont == True:
 
 	payload = {'api_key': 'e3ab974f-7a2f-417c-b31d-78c86c1dd190'}
 
-	r = requests.get("http://status.leagueoflegends.com/shards/{}".format(region), params  = payload)
+	r = requests.get('http://status.leagueoflegends.com/shards/{}'.format(region), params  = payload)
 
 	if r.status_code == 200:
-		print("Congratulations! The {} server is running!".format(region))
+		print('Congratulations! The {} server is running'.format(region))
 	else:
-		print("I'm sorry, the {} server is currently down.".format(region))
+		print('I'm sorry, the {} server is currently down.'.format(region))
 
-	if raw_input("Would you like to check another server's status? (yes/no): ") == "no":
+	if raw_input('Would you like to check another server's status? (yes/no): ') == 'no':
 		break
