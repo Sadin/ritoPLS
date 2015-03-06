@@ -7,6 +7,4 @@ r = requests.get("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/Ruinsa
 if r.status_code == 200:
 	print("Success!")
 else:
-	print("Ya done fucked up, Bob")
-
-
+	print("Failure")
