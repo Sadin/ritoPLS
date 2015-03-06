@@ -1,4 +1,4 @@
-import requests, pprint, json
+import requests, json
 
 class summoner():
     def __init__(self, name):
@@ -10,7 +10,7 @@ class summoner():
         self.name = name
         self.status = result.status_code
 
-    def basic_info(self, name):
-		
+    def basic_info(self):
+    	return self.name.upper()
 
 		
