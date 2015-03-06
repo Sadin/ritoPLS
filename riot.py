@@ -1,7 +1,19 @@
-class basic_info(user_name):
-	api_key = 'b0afea27-1602-4ed8-aff5-24caf6bbb2d1'
+import requests, pprint, json
 
-	def fetch(self):
+
+
+class summoner():
+
+	def __init__(self, name):
+		self.name = name
+
+		api_key = 'b0afea27-1602-4ed8-aff5-24caf6bbb2d1'
 		payload = {'api_key': api_key}
+		result = requests.get("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/{}".format(name), params=payload) #format the API request URL
 
-		s_info = requests.get("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/{}".format(user_name), params=payload) #format the API request URL
+		self.status = result.status_code
+
+	def basic_info(self, name):
+		return 0
+
+		
