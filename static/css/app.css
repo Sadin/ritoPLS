@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
 .container {
   width: 90%;
 }
@@ -11,6 +15,7 @@
   border-radius: 4px;
   transition: all .3s;
 }
+
 
 .siteHeader {
   border-bottom: 1px solid #eee;
@@ -69,6 +74,17 @@
 .siteFooter {
   border-top: 1px solid #eee;
   padding-top: 15px;
+}
+a, a:visited {
+	color:#555;
+	transition: all .3s;
+}
+.btn a , .btn a:visited  {
+	color:#fefefe;
+	transition: all .3s;
+}
+a:hover {
+	color:#222;
 }
 
 
