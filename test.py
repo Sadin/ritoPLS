@@ -1,6 +1,7 @@
 import json, requests
 
-raw_input('Which server would you like to know the status of?') = region
+#raw_input('Which server would you like to know the status of?') = region
+region = "na"
 
 payload = {'api_key': 'e3ab974f-7a2f-417c-b31d-78c86c1dd190'}
 
