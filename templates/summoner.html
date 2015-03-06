@@ -8,8 +8,8 @@
 {% block content %}
 	    <form class="form" action="{{ url_for('summoner') }}" method="POST">
 	    	<div class="form-item">
-	    		<input type"text" name="name" placeholder="Summoner Name" autofocus />
-	    		<button type="submit" class="btn btn-search bg-red">
+	    		<input type"text" name="name" placeholder="Summoner Name" value="{{ summoner }}"autofocus />
+	    		<button type="submit" class="btn btn-search bg-blue">
                 <i class="fa fa-search fa-lg"></i>
             	</button>
 	    	</div>
@@ -18,7 +18,7 @@
 
 {% block gutters %}					
 					<div class="column-8">
-						<h3>Heading</h3>
+						<h3>Summoner Info for: {{ summoner }}</h3>
 
 	                    <p>This is a short description for one of the three columns on our homepage.</p>
                     </div>

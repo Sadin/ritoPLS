@@ -10,7 +10,11 @@ def index():
 
 @app.route('/summoner', methods=['GET', 'POST'])
 def summoner():
-	return render_template('summoner.html')
+	error = None
+	if request.method == 'POST':
+	    user_name = request.form['name']
+
+	return render_template('summoner.html', summoner=user_name)
 
 
 if __name__ == '__main__':
