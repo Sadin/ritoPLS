@@ -12,7 +12,7 @@ app = Flask(__name__, static_path='/static')
 def index():
     return render_template('index.html', landing=True)
 
-@app.route('/summoner', methods=['GET', 'POST'])
+@app.route('/summoner', methods=['POST'])
 def summoner():
     error = False
     bad_name = False
@@ -25,7 +25,7 @@ def summoner():
         if s_info.status_code == 200:
             print("SUCCESS! The summoner {} was found!".format(user_name))
 
-            #Diplay the JSON output for debugging 
+            #Diplay the JSON output for debugging
             pprint.pprint(s_info.json())
             error = False
         else:
