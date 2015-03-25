@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, abort
 import requests, json, pprint
+from riot import summoner
 
 # Logic
 app = Flask(__name__, static_path='/static')
@@ -23,6 +24,8 @@ def summoner():
         s_info = requests.get("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/{}".format(user_name), params=payload) #format the API request URL
         if s_info.status_code == 200:
             print("SUCCESS! The summoner {} was found!".format(user_name))
+
+            pprint.pprint(s_info.json())
             error = False
         else:
             print("ERROR The summoner {} was not found!".format(user_name))
