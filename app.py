@@ -32,7 +32,7 @@ def summoner():
             print("ERROR The summoner {} was not found!".format(user_name))
             error = True
 
-        return render_template('summoner.html', summoner=request.form['name'], failure=error)
+        return render_template('summoner.html', summoner=request.form['name'], failure=error )
 
 if __name__ == '__main__':
     app.run(debug=True)
