@@ -25,6 +25,7 @@ def summoner():
         if s_info.status_code == 200:
             print("SUCCESS! The summoner {} was found!".format(user_name))
 
+            #Diplay the JSON output for debugging 
             pprint.pprint(s_info.json())
             error = False
         else:
