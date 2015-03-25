@@ -13,52 +13,13 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="./static/img/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./static/img/favicon-96x96.png">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/concise.css" />
+
     <link rel="stylesheet" type="text/css" media="screen" href="./static/css/app.css" />
     {% endblock %}
 </head>
 
 <body>
-    <div class="container">
-        <header class="siteHeader clearfix">
-            <h1 class="logo">ritoPls </h1>
+<li><a class="" href="{{ url_for('index') }}">Home</a></li>
 
-            <nav class="nav">
-                <ul>
-                    <li><a class="" href="{{ url_for('index') }}">Home</a></li>
-                    <li><a class="" href="">About</a></li>
-                    <li><a class="" href="">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        {% if landing == True %}
-        <div class="feature">
-
-        {% else %}
-        <div class="feature-summoner">
-
-        {% endif %}
-            <p class="feature-description">
-                {% block content %}{% endblock %}
-            </p>
-        </div>
-
-        <main class="siteContent">
-            <div class="row gutters">
-                <div class="column-16">
-                    {% block gutters %}{% endblock %}
-                </div>
-                </div>
-        </main>
-
-        <footer class="row">
-            <div class="column-16">
-                <p class="column-8">Created by <a href="https://github.com/Sadin">@Sadin</a> <span class="amp">&amp;</span> <a href="https://github.com/Ruinsane">@Ruinsane</a>.</p>
-                <p class="column-8">Source available on <a href="https://github.com/Sadin/ritoPLS">Github</a>!</p>
-            </div>
-        </footer>
-    </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="../js/concise.min.js"></script>
 </body>
 </html>
