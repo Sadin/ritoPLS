@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block title %}Welcome{% endblock %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/splash.css" />
+{% endblock %}
+{% block content %}
+<video autoplay loop poster="polina.jpg" id="bgvid">
+  <source src="http://sadin.me/projects/lol.webm" type="video/webm">
+</video>
+<div class="site-wrapper">
+
+ <div class="site-wrapper-inner">
+
+   <div class="cover-container">
+
+     <div class="inner cover">
+       <div class="input-group">
+         <input type="text" class="form-control" aria-label="...">
+         <div class="input-group-btn">
+           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+           <ul class="dropdown-menu dropdown-menu-right" role="menu">
+             <li><a href="#">Action</a></li>
+             <li><a href="#">Another action</a></li>
+             <li><a href="#">Something else here</a></li>
+             <li class="divider"></li>
+             <li><a href="#">Separated link</a></li>
+           </ul>
+         </div><!-- /btn-group -->
+       </div><!-- /input-group -->
+     </div>
+
+     <div class="mastfoot">
+       <div class="inner">
+         
+       </div>
+     </div>
+
+   </div>
+
+ </div>
+
+</div>
+{% endblock %}
