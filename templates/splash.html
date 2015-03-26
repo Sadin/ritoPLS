@@ -2,15 +2,40 @@
 {% block title %}Welcome{% endblock %}
 {% block head %}
   {{ super() }}
-  <link rel="stylesheet" type="text/css" media="screen" href="./static/css/slash.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/splash.css" />
 {% endblock %}
 {% block content %}
-<form class="form" action="{{ url_for('lookup') }}" method="POST">
-  <div class="form-item">
-    <input type"text" name="name" placeholder="Summoner Name" autofocus />
-    <button type="submit" class="btn btn-search bg-blue">
-          <i class="fa fa-search fa-lg"></i>
-        </button>
-  </div>
-</form>
+<div class="site-wrapper">
+
+ <div class="site-wrapper-inner">
+
+   <div class="cover-container">
+
+     <div class="inner cover">
+       <div class="input-group">
+         <input type="text" class="form-control" aria-label="...">
+         <div class="input-group-btn">
+           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+           <ul class="dropdown-menu dropdown-menu-right" role="menu">
+             <li><a href="#">Action</a></li>
+             <li><a href="#">Another action</a></li>
+             <li><a href="#">Something else here</a></li>
+             <li class="divider"></li>
+             <li><a href="#">Separated link</a></li>
+           </ul>
+         </div><!-- /btn-group -->
+       </div><!-- /input-group -->
+     </div>
+
+     <div class="mastfoot">
+       <div class="inner">
+         <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+       </div>
+     </div>
+
+   </div>
+
+ </div>
+
+</div>
 {% endblock %}

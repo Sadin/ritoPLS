@@ -14,12 +14,13 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./static/img/favicon-96x96.png">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="http://getbootstrap.com/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/app.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/app.css" />
 
     {% endblock %}
 </head>
 
 <body>
+
   <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -53,7 +54,7 @@
       </div><!--/.nav-collapse -->
     </div>
   </nav>
-
+  {% block content %}{% endblock %}
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->

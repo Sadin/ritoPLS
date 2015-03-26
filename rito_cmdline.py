@@ -1,6 +1,6 @@
 import requests, json, pprint
 
-# Declare some stuff here, Best stuff Declared NA 
+# Declare some stuff here, Best stuff Declared NA
 # yes = set(['yes', 'y', 'ye', ''])     # This is for some of the input stuff you have
 # no = set(['no' 'n'])                 # This way, if mistype or just feel like taking the easy way out,
                                 # The function will still register yes or no
@@ -28,7 +28,7 @@ summoner_error = False
 
 
 while cycle == True:
-    
+
     # Check if the loop was restarted due to an error.
     if error == False:
         # Ask user from a list of functions what they would like to do.
@@ -55,7 +55,7 @@ while cycle == True:
             if verify == "yes":
                 print("Checking details on {}\n".format(summoner_name))
 
-                payload = {'api_key': 'b0afea27-1602-4ed8-aff5-24caf6bbb2d1'} 
+                payload = {'api_key': 'b0afea27-1602-4ed8-aff5-24caf6bbb2d1'}
 
                 r = requests.get("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/{}".format(summoner_name), params=payload) #format the API request URL
 
@@ -117,8 +117,3 @@ So here is what ive got for you:
 
     else:
         error = True
-
-
-
- 
-
