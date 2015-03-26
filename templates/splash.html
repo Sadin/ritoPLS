@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Welcome{% endblock %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" type="text/css" media="screen" href="./static/css/slash.css" />
+{% endblock %}
+{% block content %}
+<form class="form" action="{{ url_for('lookup') }}" method="POST">
+  <div class="form-item">
+    <input type"text" name="name" placeholder="Summoner Name" autofocus />
+    <button type="submit" class="btn btn-search bg-blue">
+          <i class="fa fa-search fa-lg"></i>
+        </button>
+  </div>
+</form>
+{% endblock %}

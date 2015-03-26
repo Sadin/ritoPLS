@@ -1,18 +1,17 @@
 from flask import Flask, render_template, request, redirect, url_for, abort
 import requests, json, pprint
-from riot import summoner
 
-# Logic
+
+
 app = Flask(__name__, static_path='/static')
 
-# application wide definitions
 
 
 @app.route('/')
 def index():
-    return render_template('index.html', landing=True)
+    return render_template('splash.html', landing=True)
 
-@app.route('/summoner', methods=['POST'])
+@app.route('/lookup', methods=['POST'])
 def summoner():
     error = False
     bad_name = False
